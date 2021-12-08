@@ -2,11 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-async function bla() {
-  throw new Error('wowwwwwww');
+async function throwSomeError() {
+  throw new Error('Hidden error!');
 }
 export default function App() {
-  bla();
+  throwSomeError();
   return (
     <View style={styles.container}>
       <Text>blamos</Text>
